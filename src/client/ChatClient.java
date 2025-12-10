@@ -10,8 +10,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class ChatClient extends UnicastRemoteObject implements ChatClientInterface {
-    private String name;
-    private ChatServerInterface server;
+    private final String name;
+    private final ChatServerInterface server;
     private volatile boolean running = true;
 
     private static final String RESET = "\u001B[0m";
